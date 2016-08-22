@@ -22,7 +22,7 @@ public class RunUnityChanController : MonoBehaviour {
         }
 
         elapsedTime += Time.deltaTime;
-        if(1.5f <= elapsedTime) {
+        if(3.0f <= elapsedTime) {
             GameObject obstacle = Instantiate(this.obstaclePrefab);
             ObstacleController obstacleController = obstacle.GetComponent<ObstacleController>();
             obstacleController.CollidedWithUnityChan += this.ObstacleCollidedWithUnityChan;
